@@ -1,3 +1,77 @@
-header{
-    
+:root {
+  --white: #f8f9f6;
+  --blue: #007ffa;
+  --navyblue: #063f7c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+justify-content: center;
+  font-size: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-rows: 4em;
+  grid-template-columns: 100%;
+  background-color: var(--navyblue);
+  border-radius: 5px;
+  margin-top: 0px;
+place-content: center;
+place-items: center;
+
+  color: var(--white);
+width: auto;
+}
+
+.container {
+
+  grid: grid;
+
+  background-color: var(--navyblue);
+align-items: center;
+height: 100vh;
+}
+
+.chess {
+  display: grid;
+  grid-template-columns: repeat(5, 5.3em);
+  grid-template-rows: repeat(5, 5.3em);
+  gap: 0px;
+ 
+place-content: center ;
+  margin-top: 0px;
+border: double 50px navy;
+width: 29.5em;
+margin-left: 25%;
+}
+
+.white {
+  display: grid;
+  background-color: var(--white);
+  place-content: center;
+  font-size: 2.5em;
+
+}
+
+.blue {
+  display: grid;
+  background-color: var(--blue);
+  place-content: center;
+  font-size: 2.5em;
+}
+
+.home {
+  color: var(--navyblue);
+}
+
+.away {
+  color: #b8c0c8;
 }
